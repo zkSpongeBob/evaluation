@@ -126,5 +126,5 @@ def topsis(data, targets, w=None):
         bs, ws = getIdeals(C, targets)
         dmax, dmin = getDistance(C, best_solution=bs, worst_solution=ws)
         index = getIndex(dmax, dmin)
-    result = pd.DataFrame(index.T,index=data.index)
+    result = pd.DataFrame(index.T,index=data.index,columns=['综合评价指数'])
     return result

@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "BriefEvaluation", #项目名称
-    version = "0.0.1", #版本号
+    version = "0.0.2", #版本号
     keywords = ["pip", "BriefEvaluation"], #关键词
     description = "This is a package for doing a comprehensive evaluation",#简介
     long_description = "This is a package for doing a comprehensive evaluation",#长简介
