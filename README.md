@@ -9,6 +9,7 @@
 2.  pip install BriefEvaluation -i https://pypi.python.org/simple
 
 以上两种方法均可安装BriefEvaluation库，第二种方法能够及时安装到最新的
+
 3.  pip install --upgrade BriefEvaluation
 4.  pip install --upgrade BriefEvaluation -i https://pypi.python.org/simple
 
