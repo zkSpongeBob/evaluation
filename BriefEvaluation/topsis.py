@@ -126,19 +126,3 @@ def topsis(data, targets, w=None):
         index = getIndex(dmax, dmin)
     result = pd.DataFrame(index.T,index=data.index)
     return result
-
-
-# 原始数据
-a = [
-    [0.1, 5, 5000, 4.7],
-    [0.2, 6, 6000, 5.6],
-    [0.4, 7, 7000, 6.7],
-    [0.9, 10, 10000, 2.3],
-    [1.2, 2, 400, 1.8]
-]
-cname = ["人均专著（本/人）", "生师比", "科研经费（万/年）", "逾期毕业率（%）"]
-rname = ["研究生院1", "研究生院2", "研究生院3", "研究生院4", "研究生院5"]
-data = pd.DataFrame(data=a, index=rname, columns=cname)
-
-a = topsis(data, targets=[1,1,1,0], w=[0.2,0.3,0.4,0.1])
-print(a)
