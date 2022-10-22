@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+__all__ = ["getNumMat", "sacleMat", "wightMat", "getIdeals", "getDistance", "getIndex", "topsis"]
+
 # 获取指标体系，构建评价矩阵
 def getNumMat(data):
     '''
